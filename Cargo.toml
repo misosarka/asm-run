@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 asm-compiler = { path = "../asm-compiler" }
-virtual-machine = { path = "../virtual-machine" }
+virtual-machine = { path = "../rust-virtual-machine" }
