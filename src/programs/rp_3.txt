@@ -1,0 +1,24 @@
+psh 48
+$loop
+    ipa
+    and 1
+    jze @loop
+    add stk
+    sub 58
+    jze @exit
+    add 58
+    out
+    psh reg
+    mov 10 reg
+    out
+$release_wait
+    ipa
+    and 1
+    jnz @release_wait
+    jmp @loop
+$exit
+    mov 49 reg
+    out
+    mov 48 reg
+    out
+    end

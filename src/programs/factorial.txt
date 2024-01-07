@@ -1,0 +1,17 @@
+val 1
+set @40000000
+val 5
+cal @factorial
+get @40000000
+end
+
+$factorial
+    jze @return
+    psr
+    mul @40000000
+    set @40000000
+    plr
+    dec
+    cal @factorial
+$return
+    ret

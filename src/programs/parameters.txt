@@ -1,0 +1,12 @@
+psh 0x100
+psh 0x10
+cal @addnumbers
+end
+
+$addnumbers
+    tfa
+    asb 0x10
+    gea
+    aad 0x4
+    add @ar
+    ret

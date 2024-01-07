@@ -1,0 +1,7 @@
+mov 1 reg
+
+$loop
+    mov reg @80000000
+    mov @80000000 reg
+    add @80000000
+    jnf @loop

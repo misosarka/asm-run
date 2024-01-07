@@ -1,0 +1,16 @@
+psh 1
+psh 2
+psh 0
+cal @addnumbers
+pul reg
+end
+
+$addnumbers
+    mov fp ar
+    asb 20
+    mov @ar reg
+    aad 4
+    add @ar
+    aad 4
+    mov reg @ar
+    ret

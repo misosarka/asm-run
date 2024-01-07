@@ -1,0 +1,8 @@
+val 1
+cal @double
+cal @double
+end
+
+$double
+    mul 2
+    ret

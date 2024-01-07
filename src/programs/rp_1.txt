@@ -1,0 +1,7 @@
+mov 1 reg
+mov reg @0x1000
+mov 2 reg
+mov reg @0x1004
+mov @0x1000 reg
+add @0x1004
+mov reg @0x1008
